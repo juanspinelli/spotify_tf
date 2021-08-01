@@ -23,6 +23,8 @@ jobs:
         image: ghcr.io/conradludgate/spotify-auth-proxy
         environment: |
           SPOTIFY_CLIENT_REDIRECT_URI={curl $url}/spotify_callback
+          SPOTIFY_CLIENT_ID= 1
+          SPOTIFY_CLIENT_SECRET= 2  
         options: |
           --env-file .env
         run: |
