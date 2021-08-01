@@ -24,9 +24,7 @@ jobs:
         environment: |
           SPOTIFY_CLIENT_REDIRECT_URI={curl $url}/spotify_callback
           SPOTIFY_CLIENT_ID= 1
-          SPOTIFY_CLIENT_SECRET= 2  
-        options: |
-          --env-file .env
+          SPOTIFY_CLIENT_SECRET= 2 
         run: |
           echo SPOTIFY_CLIENT_REDIRECT_URI
           --rm -it -p 27228:27228
